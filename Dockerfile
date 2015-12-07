@@ -9,5 +9,6 @@ ADD run /usr/local/bin/run
 ENV GIT_URL=https://github.com/sspreitzer/maya.git
 USER user
 WORKDIR /home/user
+EXPOSE 8000
 ENTRYPOINT [ "prep" ]
 CMD [ "run" ]
